@@ -1,25 +1,38 @@
 # 页面
 
-## 设置标题
+## 设置导航栏
 
-此接口用于设置页面的标题栏。
-
-### 使用方法
-
-```
-AlitaBridge.call('setTitle', {
-  title: '标题',
-});
-```
-
-## 设置导航栏背景色
-
-此接口用于设置 BavBar 的颜色。
+此接口用于设置 NavBar 。
 
 ### 使用方法
 
 ```
-AlitaBridge.call("setNavBarColor", {
-  color: '#FFF'
+AlitaBridge.call("setNavBar", {
+  backgroundColor: '#FFF', // 背景颜色
+  color:'#000', // 标题字体颜色
+  fontSize:'24', // 标题字号
 });
+```
+
+## 设置导航栏标题
+
+设置项目的 document.title，容器会自动修改导航栏标题。
+
+### 使用方法
+
+在项目中使用
+
+```
+import React from 'react';
+import { Helmet } from 'alita';
+const Application = () => {
+ return (
+    <div className="application">
+      <Helmet>
+        <title>My Title</title>
+      </Helmet>
+    </div>
+  );
+}
+export default Application;
 ```

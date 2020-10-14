@@ -6,10 +6,8 @@
 
 | 名称 | 类型 | 说明 | 默认值 |
 |  :-  | :-:  | :-: | :-: |
-| name | string | 应用名称 | - |
+| name | string | 应用名称（默认标题，在页面第一次加载之前显示在标题栏上） | - |
 | version | string | 当前应用版本号，保证唯一值，默认使用生成应用包时的时间戳 | - |
-| defaultTitle | string | 默认标题，在页面第一次加载之前显示在标题栏上。 | - |
-| readTitle | booble | 是否读取网页标题显示在 titleBar 上。 | true |
-| showOptionMenu | booble | 是否显示右上角的“…”按钮。 | true |  |
-| toolbarMenu | string | JSON 字符串，更多的菜单项列表（放在分享后面） | - |
-| backgroundColor | string | 设置背景颜色 | FFFFFF |
+| appKey | string | 项目包名，等同于原生 apk 中的 Bundle Identifier | - |
+
+> 默认行为：读取网页标题显示在 NavBar 上，后续需要可以开配置关闭
