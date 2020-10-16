@@ -31,7 +31,7 @@
 | 属性 | 类型 | 默认值 | 必填 | 说明 |
 | :- | :- | :- | :- | :- |
 | count | number | 9 | 否 | 最多可以选择的图片张数 |
-| sizeType | Array<string\> | ['original', 'compressed'] | 否 | 所选的图片的尺寸 |
+| sizeType | Array<string\> | ['compressed'] | 否 | 所选的图片的尺寸，可选值`original`，`compressed`。建议使用`compressed`，图片会小很多 |
 | sourceType | Array<string\> | ['album', 'camera'] | 否 | 选择图片的来源 |
 | base64 | bool | true | 否 | 是否需要 `base64` 数据 |
 
