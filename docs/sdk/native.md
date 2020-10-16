@@ -47,6 +47,7 @@
 
 | 属性 | 类型 | 说明 |
 | :- | :- | :- |
-| path | string | 本地文件路径 |
-| base64 | string | base64 数据，当入参base64为true时，返回该字段 |
+| path | string | 原图本地文件路径，当`sizeType`包含`original`时返回 |
+| thumbnail | string | 压缩图本地文件路径，当`sizeType`包含`compressed`时返回 |
+| base64 | string | base64 数据，当入参`base64`为true时，返回 |
 
