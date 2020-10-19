@@ -11,18 +11,5 @@
       }
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*[.js|.css])",
-      "headers": { "Cache-Control": "max-age=63072000" },
-      "continue": true
-    },
-    { "src": "/(.*)", "dest": "/micro/$1" },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/micro/404.html" }
-  ],
-  "github": {
-    "enable": false
-  },
   "alias": ["micro.alitajs.com"]
 }
