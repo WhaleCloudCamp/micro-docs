@@ -1,0 +1,20 @@
+{
+  "name": "micro",
+  "scope": "alitajs",
+  "version": 2,
+  "builds": [{ "src": "micro/**/*", "use": "@now/static" }],
+  "routes": [
+    {
+      "src": "/(.*[.js|.css])",
+      "headers": { "Cache-Control": "max-age=63072000" },
+      "continue": true
+    },
+    { "src": "/(.*)", "dest": "/micro/$1" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/micro/404.html" }
+  ],
+  "github": {
+    "enable": false
+  },
+  "alias": ["micro.alitajs.org"]
+}
