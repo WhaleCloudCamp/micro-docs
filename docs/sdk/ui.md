@@ -7,7 +7,7 @@
 ### 使用方法
 
 ```
-AlitaBridge.call("setNavBar", {
+alita.ui.setNavBar({
   backgroundColor: '#FFF', // 背景颜色
   color:'#000', // 标题字体颜色
   fontSize:'24', // 标题字号
