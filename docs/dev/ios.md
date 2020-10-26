@@ -1,6 +1,4 @@
 ## iOS 接入
-iOS工程中添加Podfile文件，
-
 在 `Podfile` 文件（没有的话在工程根目录运行 `pod init` 新建）加入：
 ```ruby
 pod 'AlitaNativeLib', :git => 'https://github.com/WhaleCloudCamp/micro-app-ios-framework.git'
