@@ -6,7 +6,7 @@
 
 ### 使用方法
 
-```
+```js
 alita.ui.setNavBar({
   backgroundColor: '#FFF', // 背景颜色
   color:'#000', // 标题字体颜色
