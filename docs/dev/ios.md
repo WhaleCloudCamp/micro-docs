@@ -25,3 +25,6 @@ __weak typeof(self) weakSelf = self;
 AlitaMicroApp *app = self.appList[indexPath.row];
 [AlitaNative viewController:self openMicroApp:app];
 ```
+
+### 例子
+https://github.com/WhaleCloudCamp/micro-app-example-ios.git
