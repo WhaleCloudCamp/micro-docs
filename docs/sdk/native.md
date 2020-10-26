@@ -51,3 +51,18 @@
 | thumbnail | string | 压缩图本地文件路径，当`sizeType`包含`compressed`时返回 |
 | base64 | string | base64 数据，当入参`base64`为true时，返回 |
 
+## 获取系统信息
+```js
+const res = await alita.device.systemInfo();
+```
+### 参数
+### 响应
+**Object res**
+
+| 属性 | 类型 | 说明 |
+| :- | :- | :- |
+| platform | string | `ios` or `android` |
+| version | string | 主app版本，如1.0.0 |
+| uuid | string | 设备唯一标识 |
+| statusBarHeight | number | 导航栏高度 |
+| SDKVersion | string | 微应用基础库版本号，如1.0.0 |
