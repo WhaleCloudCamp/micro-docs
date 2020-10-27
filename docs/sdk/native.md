@@ -66,3 +66,16 @@ const res = await alita.device.systemInfo();
 | uuid | string | 设备唯一标识 |
 | statusBarHeight | number | 导航栏高度 |
 | SDKVersion | string | 微应用基础库版本号，如1.0.0 |
+
+## 打开web页面
+```js
+alita.device.openWeb(url: string)
+```
+### 参数
+**String url**
+
+| 属性 | 类型 | 说明 |
+| :- | :- | :- |
+| url | string | 要打开的URL |
+
+### 响应
