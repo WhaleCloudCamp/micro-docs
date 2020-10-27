@@ -94,3 +94,17 @@ alita.file.openDocument(params: {url: string});
 | url | string | 要打开文件的URL |
 
 ### 响应
+
+## 下载保存文件到本地
+```js
+alita.file.saveFile(params: {url: string});
+```
+
+### 参数
+**Object params**
+
+| 属性 | 类型 | 说明 |
+| :- | :- | :- |
+| url | string | 要打开文件的URL |
+
+### 响应
