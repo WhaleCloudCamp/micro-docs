@@ -105,6 +105,6 @@ alita.file.saveFile(params: {url: string});
 
 | 属性 | 类型 | 说明 |
 | :- | :- | :- |
-| url | string | 要打开文件的URL |
+| url | string | 要保存文件的URL |
 
 ### 响应
