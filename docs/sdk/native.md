@@ -1,5 +1,14 @@
 # 原生能力
 
+## 获取原生参数
+```js
+    cons res = await alita.device.getUserData();
+```
+### 参数
+无
+### 响应
+**Object res**
+
 ## 扫码解析
 ```js
     const res = await alita.device.scanCode(params);
@@ -108,3 +117,35 @@ alita.file.saveFile(params: {url: string});
 | url | string | 要保存文件的URL |
 
 ### 响应
+
+## 获取微应用列表
+```js
+const res = await alita.device.fetchMicroAppList();
+```
+### 参数
+无
+### 响应
+**Array<`MicroApp`\> res**
+
+`MicroApp`: 微应用对象
+
+| 属性 | 类型 | 说明 |
+| :- | :- | :- |
+| appid | string | 微应用唯一标识 |
+| appsecret | string | 微应用 `appsecret` |
+| appName | string | 微应用名称 |
+| appDesc | string | 微应用描述 |
+| appIconUrl | string | 微应用缩略图链接 |
+| versionId | string | 微应用版本 id |
+
+## 打开微应用
+```js
+const res = await alita.device.openMicroApp(params);
+```
+### 参数
+**Object params**
+
+| 属性 | 类型 | 默认值 | 必填 | 说明 |
+| :- | :- | :- | :- | :- |
+| app | `MicroApp` | 无 | 是 | 要打开的微应用对象 |
+| userData | object | 无 | 否 | 传给要打开微应用的参数 |
