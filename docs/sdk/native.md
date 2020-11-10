@@ -147,5 +147,6 @@ const res = await alita.device.openMicroApp(params);
 
 | 属性 | 类型 | 默认值 | 必填 | 说明 |
 | :- | :- | :- | :- | :- |
-| app | `MicroApp` | 无 | 是 | 要打开的微应用对象 |
+| app | `MicroApp` | 无 | app 或 appURL 必传其一 | 要打开的微应用对象 |
+| appURL | string | 无 | app 或 appURL 必传其一 | 要打开的微应用链接 |
 | userData | object | 无 | 否 | 传给要打开微应用的参数 |
