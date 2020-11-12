@@ -1,3 +1,25 @@
+---
+title: alita 微应用 - 面向原生端的微前端方案的实现
+
+order: 10
+hero:
+  title: alita 微应用
+  desc: 面向原生端的微前端方案的实现
+  actions:
+    - text: 开发文档
+      link: /dev
+features:
+  - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
+    title: 多端上线
+    desc: 一个微应用包可以在多个主应用中上线
+  - icon: https://gw.alipayobjects.com/zos/bmw-prod/d60657df-0822-4631-9d7c-e7a869c2f21c/k79dmz3q_w126_h126.png
+    title: 高性能
+    desc: 产物包更小，启动时间更短
+  - icon: https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png
+    title: 原生能力支撑
+    desc: 只需一点JavaScript就可以轻松访问本机设备功能
+---
+
 # 微应用
 
 微应用是一种类似于微服务的架构，它将微服务的理念应用于原生端，即将应用由单一的原生应用转变为原生主应用与多个小型微应用聚合为一的应用。各个微应用还可以独立运行、独立开发、独立部署。微应用仓库独立，前后端可独立开发，部署完成后主应用自动完成同步更新。

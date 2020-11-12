@@ -9,12 +9,26 @@ pod install
 ```
 
 ## 接口
+### 注册主应用
+```objc
+#import <AlitaNativeLib/AlitaNativeLib.h>
+
+@implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // xxx 替换成主应用id
+    [AlitaNative registerWithAppId:@"xxx"];
+    return YES;
+}
+
+@end
+```
 ### 获取微应用列表
 ```objc
 #import <AlitaNativeLib/AlitaNativeLib.h>
 ...
 __weak typeof(self) weakSelf = self;
-[AlitaMicroApp microAppListWithMainAppid:@"xxxxxxxx" callback:^(NSArray<AlitaMicroApp *> * _Nullable list, AlitaPagination * _Nullable pagination, NSError * _Nullable error) {
+[AlitaMicroApp microAppListWithCallback:^(NSArray<AlitaMicroApp *> * _Nullable list, AlitaPagination * _Nullable pagination, NSError * _Nullable error) {
         NSLog(@"%@\n%@\n%@", list, pagination, error);
         weakSelf.appList = list;
         [weakSelf.tableView reloadData];
