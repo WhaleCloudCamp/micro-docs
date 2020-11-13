@@ -12,7 +12,7 @@
 ### 2.2 在 gradle 中依赖 SDK
 在 gradle 文件的 dependencies 中添加对 AlitaNativeLib 的依赖：
 
-       implementation 'com.github.alitajs:micro-app-android-framework:1.0.1'
+       implementation 'com.github.alitajs:micro-app-android-framework:1.0.5'
 
 ##  3. SDK 初始化
 我们强烈建议在 Application 中对 SDK 进行初始化，初始化 SDK 需要传入的各项参数如下：
@@ -20,17 +20,17 @@
 ### 3.1 初始化 SDK
 在 Application 的 onCreate() 下调用初始化接口初始化 SDK：
 
-        MiniAppConfigure.init(this,"appkey","appSecret");
+        MiniAppConfigure.init(this,"appkey");
 
 ##  4. SDK 使用示例
 ###  4.1 启动微应用
 需要启动微应用，请调用方法：
 
-        MiniAppManager.getInstance(mActivity).startWebApp("versionId", "appName", "appid", "version");
+        MiniAppManager.getInstance(Activity).startWebApp("versionId", "appName", "appid", "version", "userData");
 
 ###  4.2 获取微应用列表
 
-        MiniAppManager.getInstance(this).getWebAppList(new MiniAppManager.RequestCallback() {
+        MiniAppManager.getInstance(Activity).getWebAppList(new MiniAppManager.RequestCallback() {
 
             @Override
             public void onError(String errorCode, String errorMessage) {
