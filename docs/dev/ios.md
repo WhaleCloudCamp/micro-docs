@@ -1,7 +1,7 @@
 ## iOS 接入
 在 `Podfile` 文件（没有的话在工程根目录运行 `pod init` 新建）加入：
 ```ruby
-pod 'AlitaNativeLib', :git => 'https://github.com/WhaleCloudCamp/micro-app-ios-framework.git'
+pod 'AlitaNativeLib', :git => 'https://github.com/alitajs/micro-app-ios-framework.git'
 ```
 然后运行
 ```sh
