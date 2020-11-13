@@ -37,7 +37,11 @@ __weak typeof(self) weakSelf = self;
 ### 打开微应用
 ```objc
 AlitaMicroApp *app = self.appList[indexPath.row];
-[AlitaNative viewController:self openMicroApp:app];
+[AlitaNative viewController:self openMicroApp:app withUserData:@{} completion:^(NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"%@", error.localizedDescription);
+        }
+    }];
 ```
 
 ### 例子
