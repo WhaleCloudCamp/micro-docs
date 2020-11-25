@@ -9,7 +9,7 @@
 ```js
 alita.ui.setNavBar({
   backgroundColor: '#FFF', // 背景颜色
-  color:'#000', // 标题字体颜色
+  color:'#000', // 标题字体颜色、返回按钮、关闭按钮颜色
   fontSize:'24', // 标题字号
 });
 ```
@@ -35,4 +35,14 @@ const Application = () => {
   );
 }
 export default Application;
+```
+
+## 设置 `WebView` 背景色
+
+设置加载h5的`WebView`背景颜色
+
+### 使用方法
+
+```js
+alita.ui.setBackgroundColor({ backgroundColor: '#0000FF' });
 ```
