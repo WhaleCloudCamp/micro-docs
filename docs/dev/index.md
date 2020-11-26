@@ -15,14 +15,7 @@ export default {
 
 ## 原生能力
 
-通过 alita-native 支撑
-
-```
-import AlitaNative from '@alitajs/native';
-
-// 获取原生端传递过来的数据
-AlitaNative.getUserData()
-```
+请查看原生能力中的说明
 
 ## 开发能力兜底
 

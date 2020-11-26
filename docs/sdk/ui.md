@@ -1,5 +1,21 @@
 # 页面
 
+## 前置配置
+
+有时候需要在打开微应用之前，就对微应用 ui 做一个设置，比如微应用中使用暗黑模式等情况，可以在 `config/config.ts` 中前置配置一下的参数。
+
+```bash
+  microTheme: {
+    navBar: {
+      backgroundColor: '#FFF',
+        color: '#000',
+          fontsize: '24',
+            display: "flex",
+    },
+    backgroundColor: '#FFF',
+  }
+```
+
 ## 设置导航栏
 
 此接口用于设置 NavBar 。
