@@ -19,7 +19,7 @@ export default {
 
 ## 开发能力兜底
 
-AlitaNative 会自动识别场景，如果是在原生环境会调用 AlitaSDK ，如果是开发环境，会模拟每个能力返回一个测试数据。比如 AlitaNative.getUserData() 在真实环境返回的是原生端传递过来的数据，如果是开发环境，会从平台返回测试数据。
+AlitaNative 会自动识别场景，如果是在原生环境会调用 AlitaSDK ，如果是开发环境，会模拟每个能力返回一个测试数据。比如 AlitaNative.getUserData() 在真实环境返回的是原生端传递过来的数据，如果是开发环境，会从配置文件中返回测试数据。
 
 ## 组件库
 
