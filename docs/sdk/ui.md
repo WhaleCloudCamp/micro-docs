@@ -62,3 +62,13 @@ export default Application;
 ```js
 alita.ui.setBackgroundColor({ backgroundColor: '#0000FF' });
 ```
+
+## 设置状态栏颜色
+
+目前只支持黑色和白色
+
+### 使用方法
+
+```js
+alita.ui.setStatusBar({ theme: 'light' | 'dark' });
+```
