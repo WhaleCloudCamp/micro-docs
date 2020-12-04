@@ -150,3 +150,39 @@ const res = await alita.device.openMicroApp(params);
 | app | `MicroApp` | 无 | app 或 appURL 必传其一 | 要打开的微应用对象 |
 | appURL | string | 无 | app 或 appURL 必传其一 | 要打开的微应用链接 |
 | userData | object | 无 | 否 | 传给要打开微应用的参数 |
+
+## 查询安装的地图
+
+```js
+const res = await alita.device.mapsList();
+```
+
+### 参数
+无
+
+### 响应
+
+**Array<Map\>** res
+
+`Map`: 地图对象
+
+| 属性 | 类型 | 说明 |
+| :- | :- | :- |
+| type | string | `baidu` \| `amap` \| `apple` \| `google` \| `qq` |
+
+
+## 打开 URLSchema
+
+```js
+alita.device.openURLSchema(params: { url: string });
+```
+
+### 参数
+
+| 属性 | 类型 | 默认值 | 必填 | 说明 |
+| :- | :- | :- | :- | :- |
+| url | string | 无 | 是 | 要打开的`URLSchema` |
+
+### 响应
+
+无
