@@ -170,6 +170,15 @@ const res = await alita.device.mapsList();
 | :- | :- | :- |
 | type | string | `baidu` \| `amap` \| `apple` \| `google` \| `qq` |
 
+### 配置
+
+`iOS` 需要在 `Info.plist` 中的 `LSApplicationQueriesSchemes` 加下面几个 URLScheme
+
+- baidumap
+- iosamap
+- comgooglemaps
+- qqmap
+
 
 ## 打开 URLScheme
 
