@@ -171,10 +171,10 @@ const res = await alita.device.mapsList();
 | type | string | `baidu` \| `amap` \| `apple` \| `google` \| `qq` |
 
 
-## 打开 URLSchema
+## 打开 URLScheme
 
 ```js
-alita.device.openURLSchema(params: { url: string });
+alita.device.openURLScheme(params: { url: string });
 ```
 
 ### 参数
