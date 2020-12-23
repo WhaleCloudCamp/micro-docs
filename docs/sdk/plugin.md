@@ -61,7 +61,7 @@ if (window.alitanative && !window.WebViewJavascriptBridge) {
     window.WebViewJavascriptBridge.registerPlugin(CustomPlugin);
   });
 } else {
-  window.WebViewJavascriptBridge.registerPlugin(CustomPlugin);
+  window?.WebViewJavascriptBridge?.registerPlugin(CustomPlugin);
 }
 ```
 
