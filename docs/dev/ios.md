@@ -46,3 +46,16 @@ AlitaMicroApp *app = self.appList[indexPath.row];
 
 ### 例子
 https://github.com/WhaleCloudCamp/micro-app-example-ios.git
+
+<img src="../../assets/micro-util-menu-ios.png" width="375px" />
+
+### 调试
+
+运行上面例子，打开调试工具
+
+<img src="../../assets/micro-util-debug-ios.png" width="375px" />
+
+1. 选择是开发还是审核
+2. 点扫码，扫描对应二维码，下面输入框是二维码内容，也可以手动编辑
+3. 如果需要传参（UserData）给微应用，可以电脑编辑，生成二维码扫描自动带入或者手动编辑
+4. 点打开，打开对应的微应用
