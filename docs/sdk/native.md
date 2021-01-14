@@ -212,3 +212,23 @@ const location = await alita.location.getLocation();
 | :- | :- | :- |
 | latitude | number | 纬度，范围为 -90~90，负数表示南纬 |
 | longitude | number | 经度，范围为 -180~180，负数表示西经 |
+
+## js 给原生发送通知
+
+```js
+alita.notice.postMessage({
+    name: '通知名',
+    userInfo: {},
+});
+```
+
+### 参数
+
+| 属性 | 类型 | 默认值 | 必填 | 说明 |
+| :- | :- | :- | :- | :- |
+| name | string | 无 | 是 | 通知名 |
+| userInfo | { [key string]: any } | 无 | 否 | 额外参数 |
+
+### 响应
+
+无
