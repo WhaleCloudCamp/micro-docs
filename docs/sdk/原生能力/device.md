@@ -1,4 +1,4 @@
-# 原生能力
+# Device
 
 ## 获取原生参数
 ```js
@@ -28,38 +28,6 @@
 | :- | :- | :- |
 | result | string | 所扫码的内容 |
 
-
-## 获取相册
-```js
-    const res = await alita.media.chooseImage(params);
-```
-
-### 参数
-**Object params**
-
-| 属性 | 类型 | 默认值 | 必填 | 说明 |
-| :- | :- | :- | :- | :- |
-| count | number | 9 | 否 | 最多可以选择的图片张数 |
-| sizeType | Array<string\> | ['compressed'] | 否 | 所选的图片的尺寸，可选值`original`，`compressed`。建议使用`compressed`，图片会小很多 |
-| sourceType | Array<string\> | ['album', 'camera'] | 否 | 选择图片的来源 |
-| base64 | bool | true | 否 | 是否需要 `base64` 数据 |
-
-### 响应
-**Object res**
-
-| 属性 | 类型 | 说明 |
-| :- | :- | :- |
-| files | Array<Object\> | 图片对象数组 |
-
-
-**res.files**
-
-| 属性 | 类型 | 说明 |
-| :- | :- | :- |
-| path | string | 原图本地文件路径，当`sizeType`包含`original`时返回 |
-| thumbnail | string | 压缩图本地文件路径，当`sizeType`包含`compressed`时返回 |
-| base64 | string | base64 数据，当入参`base64`为true时，返回 |
-
 ## 获取系统信息
 ```js
 const res = await alita.device.systemInfo();
@@ -88,35 +56,7 @@ alita.device.openWeb(url: string)
 | url | string | 要打开的URL |
 
 ### 响应
-
-## 打开文件
-```js
-alita.file.openDocument(params: {url: string});
-```
-支持 doc、xls、ppt、pdf 等格式
-
-### 参数
-**Object params**
-
-| 属性 | 类型 | 说明 |
-| :- | :- | :- |
-| url | string | 要打开文件的URL |
-
-### 响应
-
-## 下载保存文件到本地
-```js
-alita.file.saveFile(params: {url: string});
-```
-
-### 参数
-**Object params**
-
-| 属性 | 类型 | 说明 |
-| :- | :- | :- |
-| url | string | 要保存文件的URL |
-
-### 响应
+无
 
 ## 获取微应用列表
 ```js
@@ -161,6 +101,7 @@ const res = await alita.device.mapsList();
 无
 
 ### 响应
+无
 
 **Array<Map\>** res
 
@@ -196,39 +137,16 @@ alita.device.openURLScheme(params: { url: string });
 
 无
 
-## 获取当前位置
+## 关闭当前微应用
 
 ```js
-const location = await alita.location.getLocation();
+alita.device.closeMicroApp()
 ```
 
-### 参数
+## 参数
 
 无
 
-### 响应
-
-| 属性 | 类型 | 说明 |
-| :- | :- | :- |
-| latitude | number | 纬度，范围为 -90~90，负数表示南纬 |
-| longitude | number | 经度，范围为 -180~180，负数表示西经 |
-
-## js 给原生发送通知
-
-```js
-alita.notice.postMessage({
-    name: '通知名',
-    userInfo: {},
-});
-```
-
-### 参数
-
-| 属性 | 类型 | 默认值 | 必填 | 说明 |
-| :- | :- | :- | :- | :- |
-| name | string | 无 | 是 | 通知名 |
-| userInfo | { [key string]: any } | 无 | 否 | 额外参数 |
-
-### 响应
+## 响应
 
 无
