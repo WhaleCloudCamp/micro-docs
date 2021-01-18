@@ -139,6 +139,10 @@ alita.device.openURLScheme(params: { url: string });
 
 ## 关闭当前微应用
 
+> `alita-micro` >= 0.3.0  
+> iOS: `AlitaNativeLib` >= 0.6.0  
+> android: `micro-app-android-framework` >= 1.0.32  
+
 ```js
 alita.device.closeMicroApp()
 ```
